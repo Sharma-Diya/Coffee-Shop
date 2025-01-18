@@ -1,15 +1,22 @@
+@use "./mixins" as *;
+
+$primary-color: #fff0ed;
+$neutral-color: #393939;
+$nitro-blue: #5bacc3;
+$font: Open sans 300;
+$text-align: center;
+
 * {
   padding: 0;
   margin: 0;
 }
-
 body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
 .header {
-  background-color: #fff0ed;
+  background-color: $primary-color;
 }
 
 .header__nav {
@@ -35,6 +42,7 @@ body {
   float: right;
   padding-top: 2rem;
   margin: 1rem;
+
   list-style: none;
 }
 
@@ -46,12 +54,11 @@ body {
 .header__nav-link {
   font-size: 17px;
   text-decoration: none;
-  color: #393939;
+  color: $neutral-color;
   height: 100%;
-  font-family: Open Sans;
-  font-weight: 300;
+  @include font();
 }
 
 .color {
-  color: #5bacc3;
-}/*# sourceMappingURL=global.css.map */
+  color: $nitro-blue;
+}

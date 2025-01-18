@@ -1,0 +1,11 @@
+@mixin flex-style() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin font(){
+    font-family: Open Sans;
+    font-weight: 300;
+}

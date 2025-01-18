@@ -7,50 +7,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/landing.css">
-    <link rel="stylesheet" href="styles/partials/global.css">
+    <!-- <link rel="stylesheet" href="./styles/partials/global.css"> -->
 
     <title>Coffee Shop - Home</title>
 </head>
 
 <body>
 
-    <div class="nav">
-        <div class="nav__logo">
-            <img class="nav__logo-img" src="Assets/coffee-beans-logo-and-footer.svg" alt="/index.html">
-            <a class="nav__logo-title" href="./index.html">nitro</a>
+    <header class="header">
+        <div class="header__nav">
+            <img class="header__nav-img" src="../Assets/coffee-beans-logo-and-footer.svg" alt="/index.html">
+            <a class="header__nav-title" href="../index.html">nitro</a>
         </div>
-        <ul class="nav__pages">
-            <li class="nav__pages-list">
-                <a class="nav__pages-link" href="./index.html">ABOUT</a>
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="../index.html">ABOUT</a>
             </li>
-            <li class="nav__pages-list">
-                <a class="nav__pages-link" href="./pages/menu.html">MENU</a>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="..//pages/menu.html">MENU</a>
             </li>
-            <li class="nav__pages-list">
-                <a class="nav__pages-link nav__pages-link--color" href="./pages/menu.html">SHOP NOW</a>
+            <li class="header__nav-item">
+                <a class="header__nav-link color" href="..//pages/menu.html">SHOP NOW</a>
             </li>
         </ul>
-    </div>
+    </header>
 
-    <div class="main">
-        <div class="main__heading">
-            <p class="main__heading-header ">Nitro Coffee</p>
-            <p class="main-para">Coffee is a brewed drink prepared from </br> roasted coffee beans, the seeds of
+    <main class="main">
+        <div class="main__head">
+            <p class="main__heading ">Nitro Coffee</p>
+            <p class="main__subheading">Coffee is a brewed drink prepared from </br> roasted coffee beans, the seeds of
                 berries</br> from
                 certain Coffea
                 species.
             </p>
 
-            <div class="button__box">
-                <div class="button__box-border">
+            <div class="main__button">
+                <div class="main__button-box">
                     <a class="button" >SHOP NOW</a>
                 </div>
-                <div class="button-bottom">
+                <div class="main__button-bottom">
                 </div>
             </div>
         </div>
         <img src="Assets/coffeebeans-hero.png">
-    </div>
+    </main>
 
 
     <section class="products">
@@ -58,63 +58,58 @@
         <div class="products__info">
 
 
-            <div class="products__list">
+            <div class="products__card">
                 <img class="products__img" src="Assets/coffeebeans.png">
 
-                <div class="products__text--price">
-                    <div class="products__text">
+                <div class="products__text">
+                    <div class="products__text-left">
                         <p class="products__title">Coffee Beans</p>
                         <p class="products__subtitle">Pack of 3</p>
                     </div>
                     <div>
-                        <p class="products__price">$19</p>
+                        <p class="products__text-right">$19</p>
                     </div>
                 </div>
             </div>
 
-            <div class="products__list">
+            <div class="products__card">
 
                 <img class="products__img" src="Assets/coldbrew.png">
 
-                <div class="products__text--price">
-                    <div class="products__text">
+                <div class="products__text">
+                    <div class="products__text-left">
                         <p class="products__title">Cold Brew</p>
                         <p class="products__subtitle">1 Can</p>
                     </div>
-                    <p class="products__price">$5</p>
+                    <p class="products__text-right">$5</p>
                 </div>
             </div>
 
-            <div class="products__list">
+            <div class="products__card">
 
                 <img class="products__img" src="Assets/inhousebrew.png">
 
-                <div class="products__text--price">
-                    <div class="products__text">
+                <div class="products__text">
+                    <div class="products__text-left">
                         <p class="products__title">In-House Brew</p>
                         <p class="products__subtitle">1 Cup</p>
                     </div>
-                    <p class="products__price">$3</p>
+                    <p class="products__text-right">$3</p>
                 </div>
             </div>
         </div>
 
-        <!-- 
-        <div class="button__box">
-            <div class="button__box-border">
+        <div class="view__button">
+            <div class="view__button-box">
                 <a class="button" href="./pages/menu.html">VIEW ALL</a>
             </div>
-            <div class="button-bottom">
-            </div>
-         </div> -->
-        <div class="view__box">
-            <div class="view-button">
-                <a class="button" href="./pages/menu.html">VIEW ALL</a>
-            </div>
-            <div class="view__box-bottom"></div>
+            <div class="view__button-bottom"></div>
         </div>
     </section>
 
+
+    
+<!-- ..................................................... -->
     <section class="content">
         <div class="content__text">
             <h2 class="content__heading">We're Different</h2>

@@ -1,65 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+@use './partials/global' as *;
+@use './partials/mixins' as *;
 
-body {
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-.header {
-  background-color: #fff0ed;
-}
-
-.header__nav {
-  display: inline-block;
-  text-align: center;
-  padding: 20px;
-}
-
-.header__nav-img {
-  padding: 0;
-  width: 50px;
-}
-
-.header__nav-title {
-  color: #393939;
-  font-family: Open sans;
-  font-size: 45px;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.header__nav-list {
-  float: right;
-  padding-top: 2rem;
-  margin: 1rem;
-  list-style: none;
-}
-
-.header__nav-item {
-  display: inline-block;
-  width: 92px;
-}
-
-.header__nav-link {
-  font-size: 17px;
-  text-decoration: none;
-  color: #393939;
-  height: 100%;
-  font-family: Open Sans;
-  font-weight: 300;
-}
-
-.color {
-  color: #5bacc3;
-}
 
 .main__top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-style();
   background: url("../Assets/coffee-circle.jpg");
   width: 100%;
   height: 700px;
@@ -72,7 +16,7 @@ body {
   position: absolute;
   width: 300px;
   height: 200px;
-  background-color: #393939;
+  background-color: $neutral-color;
 }
 
 .main__title {
@@ -80,16 +24,14 @@ body {
   color: #fff;
   text-align: center;
   font-size: 60px;
-  font-family: Open Sans;
-  font-weight: 300;
+  @include font();
   position: absolute;
   top: 41%;
   left: 38.2%;
   height: 200px;
   width: 300px;
-  border: solid #5bacc3 5px;
+  border: solid $nitro-blue 5px;
 }
-
 .title {
   padding: 20%;
   text-align: center;
@@ -98,7 +40,7 @@ body {
 .main__nav {
   padding: 20px 10px;
   text-align: center;
-  background-color: #393939;
+  background-color: $neutral-color;
   height: 1.25rem;
 }
 
@@ -109,7 +51,7 @@ body {
 
 .main__nav-item {
   display: inline-block;
-  border-left: solid #5bacc3 0.22rem;
+  border-left: solid $nitro-blue 0.22rem;
   height: 1.45rem;
 }
 
@@ -117,31 +59,29 @@ body {
   padding: 1rem;
   text-decoration: none;
   color: #fff;
-  font-family: Open Sans;
-  font-weight: 300;
+  @include font();
   font-size: 18px;
 }
 
 .menu__items {
-  font-family: Open Sans;
-  font-weight: 300;
+  @include font();
   font-size: 18px;
   text-align: center;
-  background-color: #fff0ed;
+  background-color: $primary-color;
 }
 
 .menu__items-heading {
   padding: 10px;
   font-size: 60px;
   font-weight: 300;
-  color: #393939;
+  color: $neutral-color;
 }
 
 .menu__items-sub-heading {
   font-size: 33px;
   padding: 20px;
   font-weight: 300;
-  color: #393939;
+  color: $neutral-color;
 }
 
 .menu__items-para {
@@ -155,6 +95,6 @@ body {
 .menu__items-name-cold {
   padding: 10px 0 10px 0;
   background-color: #f7f7f7;
-}
+} 
 
 /*# sourceMappingURL=menu.css.map */
