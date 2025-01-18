@@ -1,0 +1,58 @@
+body {
+  font-family: "Open Sans";
+  /* font-weight: 400; */
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  background-color: #fff0ed;
+}
+
+.nav__logo {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav__logo--img {
+  padding: 0;
+  width: 50px;
+}
+
+.nav__logo-title {
+  color: #393939;
+  font-family: Open sans;
+  font-size: 45px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.nav__pages {
+  float: right;
+  padding-top: 2rem;
+  margin: 1rem;
+  font-family: Open sans;
+  font-weight: light 300;
+  list-style: none;
+}
+
+.nav__pages-list {
+  display: inline-block;
+  width: 92px;
+}
+
+.nav__pages-link {
+  font-size: 17px;
+  text-decoration: none;
+  color: #393939;
+  height: 100%;
+}
+
+.nav__pages-link--color {
+  color: #5bacc3;
+}
