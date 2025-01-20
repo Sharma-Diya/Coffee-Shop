@@ -1,12 +1,12 @@
-@use './partials/global' as *;
-@use './partials/mixins' as *;
-
+// @use "../styles/partials/global" as *;
+@use "./partials/mixins" as *;
+@use"./partials/global" as *;
 
 .main__top {
-  @include flex-style();
+  @include flex-style(center);
   background: url("../Assets/coffee-circle.jpg");
   width: 100%;
-  height: 700px;
+  height: 43.75rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,8 +14,8 @@
 
 .main__box {
   position: absolute;
-  width: 300px;
-  height: 200px;
+  width: 18.75rem;
+  height: 12.5rem;
   background-color: $neutral-color;
 }
 
@@ -23,14 +23,14 @@
   z-index: 1;
   color: #fff;
   text-align: center;
-  font-size: 60px;
-  @include font();
+  font-size: 3.75rem;
+  @include font(300);
   position: absolute;
   top: 41%;
   left: 38.2%;
-  height: 200px;
-  width: 300px;
-  border: solid $nitro-blue 5px;
+  height: 12.5rem;
+  width: 18.75rem;
+  border: solid $nitro-blue 0.3125rem;
 }
 .title {
   padding: 20%;
@@ -38,14 +38,14 @@
 }
 
 .main__nav {
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem;
   text-align: center;
   background-color: $neutral-color;
   height: 1.25rem;
 }
 
 .main__nav-list {
-  height: 80px;
+  height: 5rem;
   width: 100%;
 }
 
@@ -59,42 +59,40 @@
   padding: 1rem;
   text-decoration: none;
   color: #fff;
-  @include font();
-  font-size: 18px;
+  @include font(400);
+  font-size: 1.125rem;
 }
 
 .menu__items {
-  @include font();
-  font-size: 18px;
+  @include font(300);
+  font-size: 1.125rem;
   text-align: center;
+  color: $neutral-color;
+
   background-color: $primary-color;
 }
 
 .menu__items-heading {
-  padding: 10px;
-  font-size: 60px;
-  font-weight: 300;
-  color: $neutral-color;
+  padding: 1.85rem;
+  font-size: 3.75rem;
 }
 
 .menu__items-sub-heading {
-  font-size: 33px;
-  padding: 20px;
-  font-weight: 300;
-  color: $neutral-color;
+  font-size: 2.0625rem;
 }
 
 .menu__items-para {
+  @include font(300);
   display: inline-block;
-  padding: 20px;
+  padding: 0.425rem 1.25rem 0 0;
   font-style: italic;
-  inline-size: 490px;
+  inline-size: 30.625rem;
   overflow-wrap: break-word;
 }
 
 .menu__items-name-cold {
-  padding: 10px 0 10px 0;
+  padding: 0.625rem 0 0.625rem 0;
   background-color: #f7f7f7;
-} 
+}
 
 /*# sourceMappingURL=menu.css.map */

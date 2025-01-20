@@ -1,0 +1,18 @@
+@mixin flex-style($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin font($weight) {
+  font-family: Open Sans;
+  font-weight: $weight;
+}
+
+@mixin btn() {
+  position: absolute;
+  padding: 1rem;
+  width: 8.87rem;
+  border: solid #393939 0.125rem;
+  text-align: center;
+}

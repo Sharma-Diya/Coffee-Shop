@@ -3,8 +3,6 @@
 $primary-color: #fff0ed;
 $neutral-color: #393939;
 $nitro-blue: #5bacc3;
-$font: Open sans 300;
-$text-align: center;
 
 * {
   padding: 0;
@@ -17,46 +15,44 @@ body {
 
 .header {
   background-color: $primary-color;
+  @include flex-style(space-between);
 }
 
 .header__nav {
-  display: inline-block;
+  // display: inline-block;
   text-align: center;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .header__nav-img {
   padding: 0;
-  width: 50px;
+  width: 3.125rem;
 }
 
 .header__nav-title {
   color: #393939;
-  font-family: Open sans;
-  font-size: 45px;
-  font-weight: 300;
+  @include font(300);
+  font-size: 2.8125rem;
   text-decoration: none;
 }
 
 .header__nav-list {
-  float: right;
-  padding-top: 2rem;
+  padding-top: 1.2rem;
+  width: 25rem;
+  @include flex-style(space-between);
   margin: 1rem;
-
   list-style: none;
 }
 
 .header__nav-item {
-  display: inline-block;
-  width: 92px;
+  width: 100%;
 }
 
 .header__nav-link {
-  font-size: 17px;
+  font-size: 1.3125rem;
   text-decoration: none;
+  @include font(400);
   color: $neutral-color;
-  height: 100%;
-  @include font();
 }
 
 .color {
